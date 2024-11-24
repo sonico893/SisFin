@@ -1,2 +1,2 @@
-# PrimerProgramaVSCSGiHub
-Practica del primer programa con Visual Studio C# y GitHub
+# PrimerPrograma Login
+Practica del primer programa con PHP, y GitHub
