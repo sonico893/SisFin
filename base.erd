@@ -1,0 +1,186 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": 511,
+    "database": 4,
+    "databaseName": "SisFinBD",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "oKIwgTlOSDDcnVRj6gBJr"
+    ],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "oKIwgTlOSDDcnVRj6gBJr": {
+        "id": "oKIwgTlOSDDcnVRj6gBJr",
+        "name": "Usuarios",
+        "comment": "Usuarios para el login del sistema web",
+        "columnIds": [
+          "2Hh9W9XPgmCaDv60GVog9",
+          "8wKQQvkR6aNykYSGHIXuQ",
+          "K3xS-qWdHmIpmcY63LsCL"
+        ],
+        "seqColumnIds": [
+          "2Hh9W9XPgmCaDv60GVog9",
+          "8wKQQvkR6aNykYSGHIXuQ",
+          "K3xS-qWdHmIpmcY63LsCL"
+        ],
+        "ui": {
+          "x": 232,
+          "y": 268,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 202,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1732499531743,
+          "createAt": 1732499164406
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "2Hh9W9XPgmCaDv60GVog9": {
+        "id": "2Hh9W9XPgmCaDv60GVog9",
+        "tableId": "oKIwgTlOSDDcnVRj6gBJr",
+        "name": "Id",
+        "comment": "",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732499524402,
+          "createAt": 1732499226180
+        }
+      },
+      "8wKQQvkR6aNykYSGHIXuQ": {
+        "id": "8wKQQvkR6aNykYSGHIXuQ",
+        "tableId": "oKIwgTlOSDDcnVRj6gBJr",
+        "name": "Detalle",
+        "comment": "",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732499358149,
+          "createAt": 1732499226455
+        }
+      },
+      "K3xS-qWdHmIpmcY63LsCL": {
+        "id": "K3xS-qWdHmIpmcY63LsCL",
+        "tableId": "oKIwgTlOSDDcnVRj6gBJr",
+        "name": "Clave",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732499514731,
+          "createAt": 1732499227297
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  },
+  "lww": {
+    "settings.databaseName": [
+      "settings",
+      -1,
+      -1,
+      {
+        "databaseName": 1732499160006
+      }
+    ],
+    "oKIwgTlOSDDcnVRj6gBJr": [
+      "tableEntities",
+      1732499164402,
+      -1,
+      {
+        "name": 1732499202338,
+        "comment": 1732499223828
+      }
+    ],
+    "2Hh9W9XPgmCaDv60GVog9": [
+      "tableColumnEntities",
+      1732499226175,
+      -1,
+      {
+        "name": 1732499233174,
+        "options(notNull)": 1732499328384,
+        "dataType": 1732499339005,
+        "options(autoIncrement)": 1732499506887,
+        "options(primaryKey)": 1732499524402
+      }
+    ],
+    "8wKQQvkR6aNykYSGHIXuQ": [
+      "tableColumnEntities",
+      1732499226452,
+      -1,
+      {
+        "name": 1732499346933,
+        "dataType": 1732499354607,
+        "options(notNull)": 1732499358146
+      }
+    ],
+    "K3xS-qWdHmIpmcY63LsCL": [
+      "tableColumnEntities",
+      1732499227296,
+      -1,
+      {
+        "name": 1732499514730
+      }
+    ]
+  }
+}
