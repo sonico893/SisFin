@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
-    "scrollLeft": 0,
+    "scrollTop": -10,
+    "scrollLeft": -79.2683,
     "zoomLevel": 1,
     "show": 511,
     "database": 4,
@@ -31,7 +31,9 @@
   },
   "doc": {
     "tableIds": [
-      "oKIwgTlOSDDcnVRj6gBJr"
+      "oKIwgTlOSDDcnVRj6gBJr",
+      "sy5XZJQJQMzvQC6J4YCH0",
+      "I4yqStXiXPO2VLLTuv0M0"
     ],
     "relationshipIds": [],
     "indexIds": [],
@@ -54,16 +56,76 @@
           "K3xS-qWdHmIpmcY63LsCL"
         ],
         "ui": {
-          "x": 232,
-          "y": 268,
+          "x": 242,
+          "y": 436,
           "zIndex": 2,
           "widthName": 60,
           "widthComment": 202,
           "color": ""
         },
         "meta": {
-          "updateAt": 1732499531743,
+          "updateAt": 1732500847239,
           "createAt": 1732499164406
+        }
+      },
+      "sy5XZJQJQMzvQC6J4YCH0": {
+        "id": "sy5XZJQJQMzvQC6J4YCH0",
+        "name": "Opciones",
+        "comment": "Opciones del sistema para la carga de menus y modulos",
+        "columnIds": [
+          "H9xwcLSoVUDAb2w3glK7e",
+          "KzGNNiDOvnSEFdPszviGZ",
+          "ABdbi3qgMbUkWBaUk2zTr",
+          "OLpF3Doi0tcEY4k-njGsj",
+          "kDt1ttfbRga49SJ18Hn7e",
+          "GJombuLa7ey5CL6GqH3bn"
+        ],
+        "seqColumnIds": [
+          "H9xwcLSoVUDAb2w3glK7e",
+          "KzGNNiDOvnSEFdPszviGZ",
+          "ABdbi3qgMbUkWBaUk2zTr",
+          "OLpF3Doi0tcEY4k-njGsj",
+          "kDt1ttfbRga49SJ18Hn7e",
+          "GJombuLa7ey5CL6GqH3bn",
+          "4TkI--ge-nM8dEAFp7voV"
+        ],
+        "ui": {
+          "x": 95,
+          "y": 18,
+          "zIndex": 49,
+          "widthName": 60,
+          "widthComment": 298,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1732503698000,
+          "createAt": 1732499583162
+        }
+      },
+      "I4yqStXiXPO2VLLTuv0M0": {
+        "id": "I4yqStXiXPO2VLLTuv0M0",
+        "name": "Perfiles_Usuarios",
+        "comment": "",
+        "columnIds": [
+          "idRnrL7uyDfiS0h0_3Z59",
+          "gdQ4naGgxoG3Hux5NS9Up"
+        ],
+        "seqColumnIds": [
+          "bnS4mJjy3MO_6gJLq55um",
+          "idRnrL7uyDfiS0h0_3Z59",
+          "gdQ4naGgxoG3Hux5NS9Up"
+        ],
+        "ui": {
+          "x": 250,
+          "y": 238,
+          "zIndex": 125,
+          "widthName": 90,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1732503696730,
+          "createAt": 1732500709145
         }
       }
     },
@@ -113,9 +175,9 @@
         "tableId": "oKIwgTlOSDDcnVRj6gBJr",
         "name": "Clave",
         "comment": "",
-        "dataType": "",
+        "dataType": "VARCHAR",
         "default": "",
-        "options": 0,
+        "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
@@ -124,8 +186,208 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1732499514731,
+          "updateAt": 1732499787869,
           "createAt": 1732499227297
+        }
+      },
+      "H9xwcLSoVUDAb2w3glK7e": {
+        "id": "H9xwcLSoVUDAb2w3glK7e",
+        "tableId": "sy5XZJQJQMzvQC6J4YCH0",
+        "name": "Codigo",
+        "comment": "Identificador en pares, si son 2 digitos es menu, si tiene 4 es submenu y si son 6 es un modulo",
+        "dataType": "CHAR",
+        "default": "",
+        "options": 14,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 494,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732503737775,
+          "createAt": 1732499620858
+        }
+      },
+      "KzGNNiDOvnSEFdPszviGZ": {
+        "id": "KzGNNiDOvnSEFdPszviGZ",
+        "tableId": "sy5XZJQJQMzvQC6J4YCH0",
+        "name": "Nombre",
+        "comment": "Nombre del menu o modulo",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 154,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732500661192,
+          "createAt": 1732499621006
+        }
+      },
+      "OLpF3Doi0tcEY4k-njGsj": {
+        "id": "OLpF3Doi0tcEY4k-njGsj",
+        "tableId": "sy5XZJQJQMzvQC6J4YCH0",
+        "name": "Tipo",
+        "comment": "Menu o modulo",
+        "dataType": "CHAR",
+        "default": "Menu",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 88,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732500216720,
+          "createAt": 1732499865451
+        }
+      },
+      "ABdbi3qgMbUkWBaUk2zTr": {
+        "id": "ABdbi3qgMbUkWBaUk2zTr",
+        "tableId": "sy5XZJQJQMzvQC6J4YCH0",
+        "name": "Padre",
+        "comment": "Codigo padre tiene 2 digitos menos que el codigo, si es menu no tiene codigo padre",
+        "dataType": "CHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 446,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732503622800,
+          "createAt": 1732500221184
+        }
+      },
+      "kDt1ttfbRga49SJ18Hn7e": {
+        "id": "kDt1ttfbRga49SJ18Hn7e",
+        "tableId": "sy5XZJQJQMzvQC6J4YCH0",
+        "name": "Modulo",
+        "comment": "nombre del archivo con extension .php que indica la carpeta y el nombre del archivo",
+        "dataType": "CHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 448,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732503683003,
+          "createAt": 1732500258338
+        }
+      },
+      "4TkI--ge-nM8dEAFp7voV": {
+        "id": "4TkI--ge-nM8dEAFp7voV",
+        "tableId": "sy5XZJQJQMzvQC6J4YCH0",
+        "name": "Detalle",
+        "comment": "Detalle del modulo",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 102,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732500580557,
+          "createAt": 1732500500872
+        }
+      },
+      "idRnrL7uyDfiS0h0_3Z59": {
+        "id": "idRnrL7uyDfiS0h0_3Z59",
+        "tableId": "I4yqStXiXPO2VLLTuv0M0",
+        "name": "Id",
+        "comment": "",
+        "dataType": "INT",
+        "default": "",
+        "options": 13,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732500771989,
+          "createAt": 1732500751217
+        }
+      },
+      "gdQ4naGgxoG3Hux5NS9Up": {
+        "id": "gdQ4naGgxoG3Hux5NS9Up",
+        "tableId": "I4yqStXiXPO2VLLTuv0M0",
+        "name": "Nombre",
+        "comment": "",
+        "dataType": "CHAR",
+        "default": "",
+        "options": 12,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732500808479,
+          "createAt": 1732500751404
+        }
+      },
+      "bnS4mJjy3MO_6gJLq55um": {
+        "id": "bnS4mJjy3MO_6gJLq55um",
+        "tableId": "I4yqStXiXPO2VLLTuv0M0",
+        "name": "Detalle",
+        "comment": "Detalle del modulo",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 102,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732503693111,
+          "createAt": 1732503693109
+        }
+      },
+      "GJombuLa7ey5CL6GqH3bn": {
+        "id": "GJombuLa7ey5CL6GqH3bn",
+        "tableId": "sy5XZJQJQMzvQC6J4YCH0",
+        "name": "Detalle",
+        "comment": "Detalle de que es lo que hace el modulo",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 212,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732503711644,
+          "createAt": 1732503696730
         }
       }
     },
@@ -179,7 +441,145 @@
       1732499227296,
       -1,
       {
-        "name": 1732499514730
+        "name": 1732499514730,
+        "options(notNull)": 1732499772002,
+        "dataType": 1732499787861
+      }
+    ],
+    "sy5XZJQJQMzvQC6J4YCH0": [
+      "tableEntities",
+      1732499583154,
+      -1,
+      {
+        "name": 1732499590421,
+        "comment": 1732499617765
+      }
+    ],
+    "H9xwcLSoVUDAb2w3glK7e": [
+      "tableColumnEntities",
+      1732499620848,
+      -1,
+      {
+        "name": 1732499678854,
+        "dataType": 1732499736377,
+        "options(unique)": 1732499743318,
+        "options(notNull)": 1732499768129,
+        "options(primaryKey)": 1732499805731,
+        "comment": 1732503737774
+      }
+    ],
+    "KzGNNiDOvnSEFdPszviGZ": [
+      "tableColumnEntities",
+      1732499620996,
+      -1,
+      {
+        "name": 1732500560942,
+        "dataType": 1732499764450,
+        "options(notNull)": 1732499769335,
+        "comment": 1732500661181
+      }
+    ],
+    "OLpF3Doi0tcEY4k-njGsj": [
+      "tableColumnEntities",
+      1732499865436,
+      -1,
+      {
+        "name": 1732500183824,
+        "dataType": 1732500190296,
+        "options(notNull)": 1732500195113,
+        "default": 1732500200826,
+        "comment": 1732500216719
+      }
+    ],
+    "ABdbi3qgMbUkWBaUk2zTr": [
+      "tableColumnEntities",
+      1732500221172,
+      -1,
+      {
+        "name": 1732500235256,
+        "dataType": 1732500248522,
+        "comment": 1732503622798
+      }
+    ],
+    "kDt1ttfbRga49SJ18Hn7e": [
+      "tableColumnEntities",
+      1732500258335,
+      -1,
+      {
+        "name": 1732500362643,
+        "dataType": 1732500370841,
+        "comment": 1732503683000
+      }
+    ],
+    "4TkI--ge-nM8dEAFp7voV": [
+      "tableColumnEntities",
+      1732500500864,
+      1732503693072,
+      {
+        "name": 1732500566078,
+        "dataType": 1732500574375,
+        "comment": 1732500580549
+      }
+    ],
+    "I4yqStXiXPO2VLLTuv0M0": [
+      "tableEntities",
+      1732500709145,
+      -1,
+      {
+        "name": 1732500749143
+      }
+    ],
+    "idRnrL7uyDfiS0h0_3Z59": [
+      "tableColumnEntities",
+      1732500751211,
+      -1,
+      {
+        "name": 1732500755485,
+        "dataType": 1732500763513,
+        "options(notNull)": 1732500767906,
+        "options(unique)": 1732500769914,
+        "options(autoIncrement)": 1732500771976
+      }
+    ],
+    "gdQ4naGgxoG3Hux5NS9Up": [
+      "tableColumnEntities",
+      1732500751382,
+      -1,
+      {
+        "name": 1732500783482,
+        "dataType": 1732500789119,
+        "options(notNull)": 1732500791809,
+        "options(unique)": 1732500808475
+      }
+    ],
+    "bnS4mJjy3MO_6gJLq55um": [
+      "tableColumnEntities",
+      1732503693072,
+      1732503696707,
+      {
+        "name": 1732503693072,
+        "dataType": 1732503693072,
+        "default": 1732503693072,
+        "comment": 1732503693072,
+        "options(primaryKey)": 1732503693072,
+        "options(notNull)": 1732503693072,
+        "options(unique)": 1732503693072,
+        "options(autoIncrement)": 1732503693072
+      }
+    ],
+    "GJombuLa7ey5CL6GqH3bn": [
+      "tableColumnEntities",
+      1732503696707,
+      -1,
+      {
+        "name": 1732503696707,
+        "dataType": 1732503696707,
+        "default": 1732503696707,
+        "comment": 1732503711614,
+        "options(primaryKey)": 1732503696707,
+        "options(notNull)": 1732503696707,
+        "options(unique)": 1732503696707,
+        "options(autoIncrement)": 1732503696707
       }
     ]
   }
